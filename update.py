@@ -28,5 +28,3 @@ try:
 http://googleusercontent.com/immersive_entry_chip/1
 http://googleusercontent.com/immersive_entry_chip/2
 http://googleusercontent.com/immersive_entry_chip/3
-
-Pour reprendre sereinement : ouvre le document et rends-toi directement à la nouvelle **Étape 5.1**. N'hésite pas à me dire dès que tu lances le premier test manuel (à l'étape 5.4) !
