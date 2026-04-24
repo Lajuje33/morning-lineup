@@ -2,8 +2,8 @@ name: Mise a jour Morning Lineup
 
 on:
   schedule:
-    - cron: '10 5 * * *' # 07h10 heure de France
-  workflow_dispatch: # Permet de lancer le test manuellement
+    - cron: '10 5 * * *' # Déclenchement à 07h10 heure de Bordeaux (UTC+2)
+  workflow_dispatch: # Bouton pour test manuel
 
 permissions:
   contents: write
