@@ -5,7 +5,8 @@ import os
 # 1. Configuration des accès
 api_key = os.environ.get("GEMINI_API_KEY")
 # Utilisation du moteur de pointe Gemini 2.5 Pro
-url = f"https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-pro:generateContent?key={api_key}"
+# url = f"https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-pro:generateContent?key={api_key}"
+url = f"https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key={api_key}"
 
 # 2. Instructions détaillées pour l'IA
 prompt = """Agis comme un journaliste sportif expert. Ta mission est de générer le code HTML complet et monopage (utilisant Tailwind CSS) d'un tableau de bord "Morning Lineup". 
