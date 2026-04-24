@@ -2,7 +2,7 @@ name: Mise a jour Morning Lineup
 
 on:
   schedule:
-    - cron: '0 4 * * *' # 06h00 heure de France
+    - cron: '10 5 * * *' # 07h10 heure de France
   workflow_dispatch: # Permet de lancer le test manuellement
 
 permissions:
