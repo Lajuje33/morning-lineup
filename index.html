@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#f8fafc">
+    <link rel="apple-touch-icon" href="[https://www.google.com/s2/favicons?domain=nba.com&sz=192](https://www.google.com/s2/favicons?domain=nba.com&sz=192)">
+    <title>Morning Lineup - Veille Sportive</title>
+    <script src="[https://cdn.tailwindcss.com](https://cdn.tailwindcss.com)"></script>
+    <style>
+        @import url('[https://fonts.googleapis.com/css2?family=Inter:wght@400;600;900&display=swap](https://fonts.googleapis.com/css2?family=Inter:wght@400;600;900&display=swap)');
+        body { font-family: 'Inter', sans-serif; background-color: #f8fafc; -webkit-tap-highlight-color: transparent; }
+    </style>
+</head>
+<body class="pb-24">
+    <div class="max-w-md mx-auto">
+        <header class="p-6 pt-10 bg-white shadow-sm mb-8 rounded-b-3xl border-b border-slate-100">
+            <h1 class="text-4xl font-black tracking-tighter uppercase leading-none">The Morning<br><span class="text-indigo-600">Lineup</span></h1>
+            <div class="mt-4 flex justify-between items-center text-[10px] font-bold uppercase tracking-widest text-slate-400">
+                <span id="date-display">Initialisation...</span>
+            </div>
+        </header>
+        <section class="mb-12 px-6">
+            <div class="p-5 bg-white rounded-3xl border border-slate-100 shadow-sm text-center">
+                <p class="text-sm text-slate-600 leading-relaxed">Application prête ! Les données arriveront demain matin à 6h00 via Make.</p>
+            </div>
+        </section>
+    </div>
+    <script>
+      const dateOptions = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+      document.getElementById('date-display').textContent = 'Bordeaux 07:00 • ' + new Date().toLocaleDateString('fr-FR', dateOptions);
+      if ('serviceWorker' in navigator) {
+        window.addEventListener('load', () => navigator.serviceWorker.register('./sw.js'));
+      }
+    </script>
+</body>
+</html>
